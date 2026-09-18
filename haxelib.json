@@ -1,0 +1,11 @@
+{
+  "name": "hl-gc-guard",
+  "url": "https://github.com/Falagard/hl-gc-guard",
+  "license": "MIT",
+  "tags": ["hashlink", "hl", "gc", "concurrency"],
+  "description": "A single shared, mutex-protected, reentrant guard around HashLink's process-global hl.Gc.enable(bool) flag, so multiple independent libraries in the same process can safely nest/overlap GC-disabled sections without re-enabling the GC out from under each other.",
+  "version": "1.0.0",
+  "releasenote": "Initial extraction from HaxeStackPlatform's per-library HlGcGuard duplicates (sidewinder.util.HlGcGuard, hx.injection.HlGcGuard, hxwell's HlGcGuard, PlatformUI's core.HlGcGuard) into one shared, zero-dependency class so they share a single reentrancy counter instead of four independent ones.",
+  "contributors": ["Falagard"],
+  "classPath": "src"
+}
